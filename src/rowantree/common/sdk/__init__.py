@@ -1,3 +1,5 @@
+""" rowantree.common.sdk namespace """
+
 from .config.environment import (
     demand_env_var,
     demand_env_var_as_bool,
