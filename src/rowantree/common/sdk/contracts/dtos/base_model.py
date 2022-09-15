@@ -3,10 +3,10 @@
 from pydantic import BaseModel as PydanticBaseModel
 
 
-def to_camel(string: str) -> str:
+def lower_camel_case(string: str) -> str:
     """
     Alias Generator Definition
-    Used for external came based consumption.
+    Used for external based consumption.
 
     Parameters
     ----------
@@ -19,7 +19,10 @@ def to_camel(string: str) -> str:
         A new string which has been camel cased.
     """
 
-    return "".join(word.capitalize() for word in string.split("_"))
+    string_list: list[str] = string.split("_")
+    prefix: str = string_list[0]
+    suffix: str = "".join(word.capitalize() for word in string_list[1:])
+    return prefix + suffix
 
 
 class BaseModel(PydanticBaseModel):
@@ -29,7 +32,7 @@ class BaseModel(PydanticBaseModel):
     class Config:
         """Pydantic Config Over-Ride"""
 
-        alias_generator = to_camel
+        alias_generator = lower_camel_case
         allow_population_by_field_name = True
         arbitrary_types_allowed = True
         use_enum_values = True
