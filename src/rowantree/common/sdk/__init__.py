@@ -8,3 +8,4 @@ from .config.environment import (
     get_env_var,
 )
 from .config.environment_variable_not_found_error import EnvironmentVariableNotFoundError
+from .contracts.dtos.base_model import BaseModel
