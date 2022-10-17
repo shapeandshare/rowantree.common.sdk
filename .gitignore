@@ -47,3 +47,5 @@ venv/
 .vs/
 .coverage
 coverage.xml
+src/rowantree.common.sdk.egg-info/
+dist/
