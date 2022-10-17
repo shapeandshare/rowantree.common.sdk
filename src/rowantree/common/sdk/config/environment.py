@@ -17,7 +17,6 @@ def demand_env_var(name: str) -> str:
 
     Returns
     -------
-    variable_value: str
         The environment variables value as a string.
     """
 
@@ -37,7 +36,6 @@ def get_env_var(name: str) -> Optional[str]:
 
     Returns
     -------
-    variable_value: Optional[str]
         The environment variables value as a string, or `None` if it does not exist.
     """
 
@@ -57,7 +55,6 @@ def demand_env_var_as_int(name: str) -> int:
 
     Returns
     -------
-    variable_value: int
         The environment variables value as an int.
     """
 
@@ -75,7 +72,6 @@ def demand_env_var_as_float(name: str) -> float:
 
     Returns
     -------
-    variable_value: float
         The environment variables value as a float.
     """
 
@@ -93,7 +89,6 @@ def demand_env_var_as_bool(name: str) -> bool:
 
     Returns
     -------
-    variable_value: bool
         The environment variables value as a bool.
     """
 
