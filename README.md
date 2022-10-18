@@ -12,7 +12,7 @@
 
 Overview
 --------
-The Rowan Tree Common Utilities
+The Common SDK contains a collection of utilities for use across projects without introducing dependencies on other solutions within the enterprise.
 
 Contributing
 ------------
