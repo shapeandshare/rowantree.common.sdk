@@ -25,6 +25,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -43,7 +45,7 @@ jobs:
     - name: Run Tests
       run: |
         sacr run test
-    - name: Analyze with SonarCloud
+    - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
