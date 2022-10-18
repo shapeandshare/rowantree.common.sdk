@@ -18,7 +18,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -28,6 +30,17 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install sacr
         sacr run prebuild
+    - name: Run Tests
+      run: |
+        sacr run test
+    - name: SonarCloud Scan
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      with:
+        args: >
+          -Dsonar.organization=${{ secrets.SONARCLOUD_ORGANIZATION }}
     - name: Build package
       run: sacr run build:wheel
     - name: Publish package
