@@ -1,5 +1,15 @@
 # The Rowan Tree Common Utilities
 
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.common.sdk&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.common.sdk)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.common.sdk&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.common.sdk)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.common.sdk&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.common.sdk)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.common.sdk&metric=coverage)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.common.sdk)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.common.sdk&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.common.sdk)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.common.sdk&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.common.sdk)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.common.sdk&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.common.sdk)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.common.sdk&metric=bugs)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.common.sdk)
+
+
 Overview
 --------
 The Rowan Tree Common Utilities
